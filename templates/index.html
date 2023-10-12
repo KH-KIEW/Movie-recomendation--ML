@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet"type="text/css" href="\static\style.css"> 
+    <style>
+        h1{
+            text-align:center;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie Recommendation</h1>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="center-content">
+
+            <div class="user-account">
+                <a href ="#account"><img src="account-icon.png" alt="Account"></a>
+            </div>
+            <form id="movieForm">
+            </form>
+            <div id="recommendations">
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="search" method="GET">
+            <h2>Find a Movie:</h2>
+            <form action="/search"method="POST" >
+                <input type="text" name="query" placeholder="Search for movies">
+               <input type="submit" value="search" >
+            </form>
+        </section>
+            <main>
+                <form id="filter-form">
+                    <div class="filter">
+                        <label for="rating-filter">Filter by Rating:</label>
+                        <select id="rating-filter">
+                            <h2>Filter by rating</h2>
+                            <option value="0">All</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="genre-filter">Filter by Genre:</label>
+                        <select id="genre-filter">
+                            <h2>Filter by genre</h2>
+                            <option value="all">All Genres</option>
+                            <option value="Action">Action</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Romance">Romance</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </main>
+
+</body>
+</html>

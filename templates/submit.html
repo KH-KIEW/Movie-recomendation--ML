@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="\static\style.css"> 
+    <style>
+        h1 {
+            text-align: center;
+        } 
+    </style>
+</head>
+<body> 
+    <div class="background-image"></div> 
+    <div class="user-account">
+        <a href ="#account"><img src="C:\Users\SARANYA\Downloads\movie recomendations.jpeg" alt="Account"></a>
+    </div>
+
+    <h1>Movie Recommendation</h1>
+    <!-- Your other HTML content here -->
+
+    <main>
+        <section class="search">
+            <h2>Find a Movie:</h2>
+            <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Search for movies">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="filter">
+            <h2>Filter by Rating:</h2>
+            <form action="/filter-by-rating" method="POST">
+                <select name="rating">
+                    <option value="0">All</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                
+            
+        </section>
+
+        <section class="filter">
+            <h2>Filter by Genre:</h2>
+                <select name="genre">
+                    <option value="all">All Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Romance">Romance</option>
+                </select>
+        </section>
+           
+        <section class="filter">
+                <input type="submit" value="submit">
+            
+            </form>
+        </section>
+    </main>
+</body>
+</html>
